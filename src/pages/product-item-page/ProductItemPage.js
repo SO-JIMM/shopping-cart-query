@@ -1,6 +1,6 @@
 import { Card, Container, Image } from "@mantine/core"
-import React, { useEffect } from "react"
-import { Link, useParams } from "react-router-dom"
+import React from "react"
+import { useParams } from "react-router-dom"
 import { useGetProductByIdQuery } from "../../store/api/apiSlice"
 
 const ProductItemPage = () => {

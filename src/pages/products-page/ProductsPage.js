@@ -1,20 +1,11 @@
-import {
-  SimpleGrid,
-  Card,
-  Group,
-  Text,
-  Image,
-  Container,
-  Button,
-} from "@mantine/core"
-import React, { useEffect, useState } from "react"
+import { SimpleGrid, Card, Group, Text, Image, Container } from "@mantine/core"
+import React from "react"
 import { Link, useParams } from "react-router-dom"
 
 import {
   apiSlice,
   useGetProductsByCategoryQuery,
 } from "../../store/api/apiSlice"
-import { store } from "../../store/store"
 const ProductsPage = () => {
   const { category } = useParams()
   // store.dispatch(apiSlice.endpoints.getProductsByCategory.initiate(category))
